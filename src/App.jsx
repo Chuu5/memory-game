@@ -98,11 +98,15 @@ function App() {
   return (
     <div className="container">
       <div className="title">
-        <div>
-          <h4>Score: {score}</h4>
-          <h4>Max Score: {highScore}</h4>
-        </div>
-        <h4>Rules: Get Point by clicking in any card, but don't click the same card twice</h4>
+          <div className="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Arknights_English_Release_Logo.svg/1200px-Arknights_English_Release_Logo.svg.png" alt="" />
+          </div>
+          
+          <div>
+            <h4>Score: {score}</h4>
+            <h4>Max Score: {highScore}</h4>
+          </div>
+          <h4>Rules: Get Point by clicking in any card, but don't click the same card twice</h4>
       </div>
       <div className="cards">
         {characters.map( (character) => {

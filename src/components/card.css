@@ -22,6 +22,12 @@ body {
     margin-top: 10px;
 }
 
+
+
+.logo img {
+    width: 20%;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;

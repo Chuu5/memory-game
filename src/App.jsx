@@ -97,8 +97,13 @@ function App() {
 
   return (
     <div className="container">
-      <h4>Score: {score}</h4>
-      <h4>Max Score: {highScore}</h4>
+      <div className="title">
+        <div>
+          <h4>Score: {score}</h4>
+          <h4>Max Score: {highScore}</h4>
+        </div>
+        <h4>Rules: Get Point by clicking in any card, but don't click the same card twice</h4>
+      </div>
       <div className="cards">
         {characters.map( (character) => {
           return <Card key={character.name} 
